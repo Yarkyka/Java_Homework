@@ -9,9 +9,9 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            FileProvider<Integer> provider = new NumberFileProvider("luukitoo");
+            FileProvider<Integer> provider = new NumberFileProvider("nums");
 
-            Integer[] numbers = NumberWorker.generateFromRange(24).toArray(Integer[]::new);
+            Integer[] numbers = NumberWorker.generateFromRange(21).toArray(Integer[]::new);
             provider.writeToFile(numbers);
 
             try {
